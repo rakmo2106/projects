@@ -354,6 +354,7 @@ root.bind("<Control-d>", lambda e: delete_task())
 root.bind("<Control-b>", lambda e: toggle_compact_mode())
 root.bind("<Control-BackSpace>", delete_word)
 root.bind("<Control-z>", undo_text)
+task_listbox.bind("<Delete>", lambda e: delete_task())
 
 load_tasks()
 update_list()
